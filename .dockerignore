@@ -1,0 +1,18 @@
+# git-related files and folders
+.git
+.github
+.gitignore
+
+# compiled output
+dist
+tmp
+out-tsc
+# Only exists if Bazel was run
+bazel-out
+
+# developer files and folders
+.editorconfig
+.vscode
+
+# coverage data
+coverage
