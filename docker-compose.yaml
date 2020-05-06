@@ -6,4 +6,4 @@ services:
     container_name: aqua-viewer
     build: .
     ports:
-      - 8080:8080
+      - 8080:80

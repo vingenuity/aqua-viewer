@@ -22,4 +22,6 @@ LABEL vcs-url = "https://github.com/samnyan/aqua-viewer"
 COPY --from=node /usr/src/app/dist/aqua-viewer /usr/share/nginx/html
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
+EXPOSE 80
+
 CMD ["nginx", "-g", "daemon off;"]
