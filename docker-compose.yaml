@@ -5,5 +5,6 @@ services:
     hostname: localhost
     container_name: aqua-viewer
     build: .
+    image: samnyan/aqua-viewer:test
     ports:
       - 8080:80
