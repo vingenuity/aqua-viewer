@@ -17,8 +17,9 @@ FROM nginx:1.16.1-alpine
 LABEL name = "Aqua Viewer"
 LABEL description = "A WebUI for AQUA Server"
 LABEL maintainer = "samnyan"
-LABEL version = "1.0"
 LABEL vcs-url = "https://github.com/samnyan/aqua-viewer"
 
 COPY --from=node /usr/src/app/dist/aqua-viewer /usr/share/nginx/html
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+
+CMD ["nginx", "-g", "daemon off;"]
